@@ -8,6 +8,7 @@ import openfl.Lib;
 import openfl.display.SimpleButton;
 import openfl.display.Bitmap;
 import openfl.text.TextField;
+import openfl.text.TextFieldAutoSize;
 import openfl.Assets;
 import openfl.text.TextFormat;
 
@@ -40,17 +41,14 @@ class Main extends Sprite
 			var cl = objs[i];
 			if (cl.name == "SimpleButton")
 			{
-				trace("");
 				setSimpleButton(cl);
 			}
 			else if (cl.name == "Bitmap")
-			{
-				
+			{	
 				setBitmap(cl);
 			}
 			else if (cl.name == "TextField")
 			{
-				
 				setTextField(cl);
 			}
 		}
@@ -81,10 +79,9 @@ class Main extends Sprite
 	private function setTextField(obj:Object)
 	{
 		var casted:TextField = new TextField();
-		casted.defaultTextFormat = new TextFormat("Times New Roman", 14, 0x000000);
-		casted.wordWrap = true;
+		casted.defaultTextFormat = new TextFormat("Times New Roman", 14, 0xFFFFFF);
+		casted.autoSize = TextFieldAutoSize.LEFT;
 		casted.selectable = false;
-		casted.multiline = false;
 		casted.text = "This is a test to see if the generator works as expected.";
 		
 		casted.x = obj.x;

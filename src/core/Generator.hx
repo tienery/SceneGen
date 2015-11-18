@@ -57,8 +57,9 @@ class Generator
 			{
 				var color = _bitmap.getPixel(x, y);
 				
-				if (color == transparentColor)
+				if (color == transparentColor || color == _previousColor)
 					continue;
+#if debug
 				else if (color == _previousColor && _previousColor != transparentColor)
 				{
 					//This is an unfinished attempt at resolving whether or not the current pixel location is within
@@ -75,6 +76,7 @@ class Generator
 						}
 					}
 				}
+#end
 				else
 				{
 					var cl:String = associations.get(color);
