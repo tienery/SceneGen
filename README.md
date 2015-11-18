@@ -41,4 +41,4 @@ Here is an example:
 This file has been reduced for readability, but you can see the rest of this example - and even test it for yourself by cloning this repository - from [this file](https://github.com/tienery/SceneGen/blob/master/src/Main.hx).
 
 ## TODO
-Currently, it is not very smart. Because of it's very simple algorithm, it does not take into account the save of rectangles within a bitmap image. This will be resolved ASAP.
+Currently, it is not very smart. Because of it's very simple algorithm, it does not take into account the bounds of rectangles within a bitmap image. This will be resolved ASAP.
