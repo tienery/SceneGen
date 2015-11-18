@@ -1,7 +1,7 @@
 package;
 
-import core.Generator;
-import core.Object;
+import scenegen.core.Generator;
+import scenegen.core.Object;
 import openfl.display.DisplayObject;
 import openfl.display.Sprite;
 import openfl.Lib;

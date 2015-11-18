@@ -1,4 +1,4 @@
-package core;
+package scenegen.core;
 
 class Object
 {
